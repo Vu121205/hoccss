@@ -1,18 +1,27 @@
 /* h2 đứng ngay sau thẻ p */
-p+h2{
-    color: blue;
+p + h2 {
+  color: blue;
 }
 /* h3 đứng ngay sau thẻ h2 */
-h2+h3{
-    color: blue;
+h2 + h3 {
+  color: blue;
 }
-.demo+h3{
-    color: red;
+.demo + h3 {
+  color: red;
 }
-.demo.demo2+h3{
-    color: yellowgreen;
+.demo.demo2 + h3 {
+  color: yellowgreen;
 }
 /* chọn tất cả thẻ h3 đằng sau thẻ h1 */
-h2~h3{
-    color: chartreuse;
+h2 ~ h3 {
+  color: chartreuse;
+}
+[title~="tuhoc"] {
+  color: red;
+}
+[title|="tuhoc"]{
+    color: aqua;
+}
+[title^="tu"]{
+    color: rgb(255, 0, 166);
 }
